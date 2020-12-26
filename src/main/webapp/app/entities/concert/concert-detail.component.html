@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="concert">
+            <h2><span jhiTranslate="monolithicwRegistryApp.concert.detail.title">Concert</span> {{ concert.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="monolithicwRegistryApp.concert.name">Name</span></dt>
+                <dd>
+                    <span>{{ concert.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="monolithicwRegistryApp.concert.date">Date</span></dt>
+                <dd>
+                    <span>{{ concert.date }}</span>
+                </dd>
+                <dt><span jhiTranslate="monolithicwRegistryApp.concert.address">Address</span></dt>
+                <dd>
+                    <span>{{ concert.address }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/concert', concert.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

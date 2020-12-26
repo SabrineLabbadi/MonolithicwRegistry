@@ -1,0 +1,26 @@
+{
+  "monolithicwRegistryApp": {
+    "concert": {
+      "home": {
+        "title": "Concerts",
+        "createLabel": "Create a new Concert",
+        "createOrEditLabel": "Create or edit a Concert",
+        "notFound": "No Concerts found"
+      },
+      "created": "A new Concert is created with identifier {{ param }}",
+      "updated": "A Concert is updated with identifier {{ param }}",
+      "deleted": "A Concert is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Concert {{ id }}?"
+      },
+      "detail": {
+        "title": "Concert"
+      },
+      "name": "Name",
+      "date": "Date",
+      "address": "Address",
+      "band": "Band",
+      "customer": "Customer"
+    }
+  }
+}
